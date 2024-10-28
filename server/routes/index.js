@@ -10,7 +10,6 @@ var auth=require('../middleware/auth.js')
 
 dotenv.config()
 
-//const CONNECTION_URL = 'mongodb+srv://dev:123@cluster0.8jcke.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 mongoose.connect(process.env.CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true},function(err,result){
   if(err)
   {
